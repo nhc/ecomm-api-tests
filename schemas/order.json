@@ -1,0 +1,427 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "order": {
+          "type": "object",
+          "properties": {
+            "orderNumber": {
+              "type": "number"
+            },
+            "storeId": {
+              "type": "number"
+            },
+            "contact": {
+              "type": "object",
+              "properties": {
+                "accountId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "contactId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "title": {},
+                "firstName": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "surname": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "email": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "phoneNumber": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "mobileNumber": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "accountId",
+                "contactId",
+                "firstName",
+                "surname",
+                "email",
+                "phoneNumber",
+                "mobileNumber"
+              ]
+            },
+            "account": {
+              "type": "string",
+              "minLength": 1
+            },
+            "dateTimeCreated": {},
+            "dateTimePlaced": {},
+            "dateRequired": {},
+            "orderStatus": {
+              "type": "string",
+              "minLength": 1
+            },
+            "orderType": {
+              "type": "string",
+              "minLength": 1
+            },
+            "paymentType": {},
+            "deliveryMethod": {
+              "type": "string",
+              "minLength": 1
+            },
+            "orderInstructions": {
+              "type": "string"
+            },
+            "orderReference": {},
+            "lastFourDigits": {},
+            "addresses": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "deliveryAddress": {
+                  "type": "object",
+                  "properties": {
+                    "id": {},
+                    "contactId": {},
+                    "company": {
+                      "type": "string"
+                    },
+                    "title": {},
+                    "firstName": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "lastName": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "fullName": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "mobile": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "telephone": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "addressLineOne": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "addressLineTwo": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "addressLineThree": {},
+                    "town": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "county": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "countryCode": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "country": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "postcode": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "type": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "maxAddressLineOne": {
+                      "type": "number"
+                    },
+                    "maxTown": {
+                      "type": "number"
+                    },
+                    "maxPostcode": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "company",
+                    "firstName",
+                    "lastName",
+                    "fullName",
+                    "mobile",
+                    "telephone",
+                    "addressLineOne",
+                    "addressLineTwo",
+                    "town",
+                    "county",
+                    "countryCode",
+                    "country",
+                    "postcode",
+                    "type",
+                    "maxAddressLineOne",
+                    "maxTown",
+                    "maxPostcode"
+                  ]
+                },
+                "billingAddress": {
+                  "type": "object",
+                  "properties": {
+                    "id": {},
+                    "contactId": {},
+                    "company": {
+                      "type": "string"
+                    },
+                    "title": {},
+                    "firstName": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "lastName": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "fullName": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "mobile": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "telephone": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "addressLineOne": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "addressLineTwo": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "addressLineThree": {},
+                    "town": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "county": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "countryCode": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "country": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "postcode": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "type": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "maxAddressLineOne": {
+                      "type": "number"
+                    },
+                    "maxTown": {
+                      "type": "number"
+                    },
+                    "maxPostcode": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "company",
+                    "firstName",
+                    "lastName",
+                    "fullName",
+                    "mobile",
+                    "telephone",
+                    "addressLineOne",
+                    "addressLineTwo",
+                    "town",
+                    "county",
+                    "countryCode",
+                    "country",
+                    "postcode",
+                    "type",
+                    "maxAddressLineOne",
+                    "maxTown",
+                    "maxPostcode"
+                  ]
+                }
+              },
+              "required": [
+                "deliveryAddress",
+                "billingAddress"
+              ]
+            },
+            "orderLines": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": [
+                  "productName",
+                  "productId",
+                  "sku",
+                  "quantity",
+                  "price",
+                  "priceUnit"
+                ],
+                "properties": {
+                  "productName": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "productId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sku": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "quantity": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "price": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "priceUnit": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "offerPrice": {},
+                  "offerPriceUnit": {}
+                }
+              }
+            },
+            "totals": {},
+            "orderResponse": {
+              "type": "object",
+              "properties": {
+                "orderNumber": {}
+              },
+              "required": []
+            },
+            "transactionId": {},
+            "exportFile": {},
+            "errors": {},
+            "tempEmail": {},
+            "receivedByBranchEmailSent": {},
+            "storeName": {},
+            "paymentResponses": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": [
+                  "orderId",
+                  "gateway",
+                  "vendor",
+                  "transactionId",
+                  "amount",
+                  "currency",
+                  "status"
+                ],
+                "properties": {
+                  "orderId": {
+                    "type": "number"
+                  },
+                  "gateway": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "vendor": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "transactionId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "amount": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "currency": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          },
+          "required": [
+            "orderNumber",
+            "storeId",
+            "contact",
+            "account",
+            "orderStatus",
+            "orderType",
+            "deliveryMethod",
+            "orderInstructions",
+            "addresses",
+            "orderLines",
+            "orderResponse",
+            "paymentResponses"
+          ]
+        }
+      },
+      "required": [
+        "order"
+      ]
+    },
+    "error": {
+      "type": "object",
+      "properties": {
+        "info": {},
+        "validation": {}
+      },
+      "required": []
+    },
+    "message": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "status",
+    "data",
+    "error",
+    "message"
+  ]
+}
