@@ -4,7 +4,7 @@ A repository for some simple functional, integration and performance testing of 
 
 ### Schemas
 
-The [folder schemas](tree/master/schemas) stores the json schemas for some of the endpoints. As they are added retrospectively the process is as follows.
+The [folder schemas](schemas/) stores the json schemas for some of the endpoints. As they are added retrospectively the process is as follows.
 
 Firstly install the [json-schema-generator](https://www.npmjs.com/package/json-schema-generator) from npm
 
