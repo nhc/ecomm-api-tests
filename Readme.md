@@ -2,6 +2,8 @@
 
 A repository for some simple functional, integration and performance testing of the REST API endpoints. Test are run through POSTMAN exported as collections and stored here. 
 
+This is work in progress.
+
 ### Schemas
 
 The [folder schemas](schemas/) stores the json schemas for some of the endpoints. As they are added retrospectively the process is as follows.
@@ -26,3 +28,7 @@ Export both the Postman collection and also the Postman environment then do this
 ```bash
 newman run SystemTests.postman_collection.json --environment MKM-Env-Postman.json
 ``` 
+
+You should see something like this 
+
+![Screenshot](newman-output.png)
