@@ -4,9 +4,9 @@ A repository for some simple functional, integration and performance testing of 
 
 ### Schemas
 
-The (folder schemas)[/ecomm-api-tests/tree/master/schemas] stores the json schemas for some of the endpoints. As they are added retrospectively the process is as follows.
+The [folder schemas](/ecomm-api-tests/tree/master/schemas) stores the json schemas for some of the endpoints. As they are added retrospectively the process is as follows.
 
-Firstly install the (json-schema-generator)[https://www.npmjs.com/package/json-schema-generator] from npm
+Firstly install the [json-schema-generator](https://www.npmjs.com/package/json-schema-generator) from npm
 
 Then use postman to grab a json endpoint. With the correct and expected json output format it so that it 
 
