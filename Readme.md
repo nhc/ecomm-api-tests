@@ -18,3 +18,11 @@ $ json-schema-generator INPUT.json -o OUTPUT-schema.json
 ```
 
 Will produce the schema file. At this point however, this generator does not use ```"additionalProperties": false``` which is really important for us. So add this into each section we need it. Without this, and when running the validator against the schema, it allows extra data that we really want to test against happening. 
+
+### Running Postman Tests
+
+Export both the Postman collection and also the Postman environment then do this 
+
+```bash
+newman run SystemTests.postman_collection.json --environment MKM-Env-Postman.json
+``` 
